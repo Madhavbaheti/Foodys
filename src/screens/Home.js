@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Card from "../components/Card";
+import Card from "../components/Card"
 
 
 function Home() {
@@ -67,7 +67,7 @@ function Home() {
                   <hr />
                   {foodItem !== [] ? (
                     foodItem
-                      .filter((item) => (item.CategoryName == data.CategoryName) && (item.name.toLowerCase().includes(search.toLocaleLowerCase())))
+                      .filter((item) => (item.CategoryName === data.CategoryName) && (item.name.toLowerCase().includes(search.toLocaleLowerCase())))
                      .map((filteritems) => {
                         return (
                           <div
@@ -75,9 +75,9 @@ function Home() {
                             className="col-12 col-md-6 col-lg-4 mb-5 "
                           >
                             <Card
-                              foodName={filteritems.name}
+                              foodItems={filteritems}
                               options={filteritems.options[0]}
-                              img={filteritems.img}
+                             
                             ></Card>
                           </div>
                         );

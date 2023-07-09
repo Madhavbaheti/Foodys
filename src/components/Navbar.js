@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { Link,useNavigate } from "react-router-dom";
-
+import Badge from 'react-bootstrap/Badge'
 
 
 function Navbar() {
@@ -70,7 +70,9 @@ function Navbar() {
               </div>
             ) : (
               <div>
-                <div className="btn  bg-white text-success mx-2" >My Cart</div>
+                <div className="btn  bg-white text-success mx-2 " > My Cart{"      "}
+                <Badge pill bg="danger">2</Badge>
+                </div>
                 <div className="btn  bg-white text-danger mx-1" onClick={handleLogout}>Log Out</div>
               </div>
             )}
