@@ -32,13 +32,16 @@ const Reducer = (state, action) => {
           );
           arr[index] = {
             ...food,
-            qty: parseInt(action.qty) +food.qty ,
+            qty: parseInt(action.qty) + food.qty ,
             price: action.price  + food.price ,
           };
         }
         return arr;
       });
       return arr;
+    case "DROP": 
+    let empArray = []
+    return empArray
     default:
       console.log("Error in reducer");
   }

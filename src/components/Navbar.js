@@ -76,7 +76,7 @@ function Navbar() {
               <div>
                 <div className="btn  bg-white text-success mx-2 " onClick={()=> {setcartview(true)}} > My Cart{"      "}
                 
-                {data.length==0?null:<Badge pill bg="danger">{data.length}</Badge>}
+                {data.length===0?null:<Badge pill bg="danger">{data.length}</Badge>}
              
                 </div>
                 {cartview?<Modal onClose={()=> setcartview(false)}><Cart/></Modal>:null}
