@@ -52,6 +52,7 @@ router.post("/login", body('email').isEmail(),body('password','incorrect passwor
         return res.status(400).json({errors: "Wrong Credetials"});
        }
        const data = {
+        
         user:{
           id:userData.id
         }

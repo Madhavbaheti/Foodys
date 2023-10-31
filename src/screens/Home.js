@@ -58,14 +58,14 @@ function Home() {
             </div>
       </div>
       <div className="container m-3">
-        {catData !== []
+        {catData
           ? catData.map((data) => {
               return (
                 <div className="row mb-3">
                   <div key={data._id}>{data.CategoryName}</div>
 
                   <hr />
-                  {foodItem !== [] ? (
+                  {foodItem ? (
                     foodItem
                       .filter((item) => (item.CategoryName === data.CategoryName) && (item.name.toLowerCase().includes(search.toLocaleLowerCase())))
                      .map((filteritems) => {
