@@ -13,7 +13,7 @@ Foodys is a web application that allows users to conveniently order food online.
 
 - **Frontend**: React.js
 - **Backend**: Express.js
-- **Database**: [Mention your database technology, e.g., MongoDB]
+- **Database**: MongoDB
 
 ## Getting Started
 
